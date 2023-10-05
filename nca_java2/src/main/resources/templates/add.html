@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<title>NCA JAVA2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/noscript.css" />
+	</head>
+
+	<body class="is-preload">
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<div class="index align-left">
+					<section>
+						<header>
+							<h3>登録</h3>
+						</header>
+						<div class="content">
+
+							<form method="post" th:action="@{/add/action}" th:object="${form}">
+
+								<div class="fields">
+									<div class="field half">
+										<label for="name">名前</label>
+										<input type="text" th:field="*{name}" required />
+									</div>
+									<div class="field half">
+										<label for="kana">カナ</label>
+										<input type="text" th:field="*{kana}" required />
+									</div>
+									<div class="field">
+										<label for="birthday">生年月日</label>
+										<input type="text" th:field="*{birthday}" required />
+									</div>
+									<div class="field">
+										<label>性別</label>
+										<input type="radio" value="M"  th:field="*{gender}" required />
+										<label for="gender1">M</label>
+										
+										<input type="radio" value="F"  th:field="*{gender}" />
+										<label for="gender2">F</label>
+										
+										<input type="radio" value="U"  th:field="*{gender}" />
+										<label for="gender3">U</label>
+ 									</div>
+									<div class="field">
+										<label>血液型</label>
+										<input type="radio" value="A"  th:field="*{bloodtype}" required />
+										<label for="bloodtype1">A</label>
+										<input type="radio" value="O"  th:field="*{bloodtype}" />
+										<label for="bloodtype2">O</label>
+										<input type="radio" value="B"  th:field="*{bloodtype}" />
+										<label for="bloodtype3">B</label>
+										<input type="radio" value="AB" th:field="*{bloodtype}" />
+										<label for="bloodtype4">AB</label>
+ 									</div>
+									<div class="field">
+										<label for="email">メールアドレス</label>
+										<input type="email" th:field="*{email}" required />
+									</div>
+									<div class="field">
+										<label for="tel"></label>
+										<input type="text" th:field="*{tel}" required />
+									</div>
+									<div class="field">
+										<label for="zip"></label>
+										<input type="text" th:field="*{zip}" required />
+									</div>
+ 									<div class="field">
+										<label for="address">住所</label>
+										<input type="text" th:field="*{address}" required />
+									</div>
+									<div class="field">
+										<label for="password">パスワード</label>
+										<input type="password" th:field="*{password}" required />
+										<span id="view">
+									          <i class="far fa-eye-slash"></i>
+									     </span>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" name="submit" id="submit" value="新規登録" /></li>
+								</ul>
+								<input type="hidden" th:field="*{password}" />
+							</form>
+							<hr />
+							<ul class="actions">
+								<!--  <li><a href="/search" class="button primary">再検索</a></li>-->
+								<li><a href="/menu" class="button primary">メニュー</a></li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Scripts -->
+		<script src="/assets/js/jquery.min.js"></script>
+		<script src="/assets/js/jquery.scrollex.min.js"></script>
+		<script src="/assets/js/jquery.scrolly.min.js"></script>
+		<script src="/assets/js/browser.min.js"></script>
+		<script src="/assets/js/breakpoints.min.js"></script>
+		<script src="/assets/js/util.js"></script>
+		<script src="/assets/js/main.js"></script>
+		<script src="/assets/js/nca.js"></script>
+
+	</body>
+</html>

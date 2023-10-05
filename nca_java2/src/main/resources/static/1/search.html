@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<title>NCA JAVA2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+	<body class="is-preload">
+
+		<section class="wrapper style1 align-center">
+			<div class="inner">
+				<div class="index align-left">
+					<section>
+						<header>
+							<h3>検索</h3>
+						</header>
+						<div class="content">
+							<form method="get" action="list.html">
+								<div class="fields">
+									<div class="field">
+										<label for="kana">カナ</label>
+										<input type="text" name="kana" id="kana" value="" />
+									</div>
+									<div class="field">
+										<label>血液型</label>
+										<input type="radio" id="blood-a"  name="blood" value="a" checked />
+										<label for="blood-a">A</label>
+										<input type="radio" id="blood-o"  name="blood" value="o" />
+										<label for="blood-o">O</label>
+										<input type="radio" id="blood-b"  name="blood" value="b" />
+										<label for="blood-b">B</label>
+										<input type="radio" id="blood-ab" name="blood" value="ab" />
+										<label for="blood-ab">AB</label>
+									</div>
+									<div class="field">
+										<label for="address">都道府県</label>
+										<select name="address" id="address">
+											<option value="">- 都道府県 -</option>
+											<option value="愛知県">愛知県</option>
+											<option value="岐阜県">岐阜県</option>
+											<option value="三重県">三重県</option>
+											<option value="静岡県">静岡県</option>
+										</select>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" name="submit" id="submit" value="検索" /></li>
+								</ul>
+							</form>
+							<hr />
+							<ul class="actions">
+								<li><a href="menu.html" class="button primary">メニュー</a></li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

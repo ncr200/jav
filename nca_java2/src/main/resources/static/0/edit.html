@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<title>NCA JAVA2</title>
+		<meta charset="utf-8" />
+	</head>
+
+	<body>
+		<header>
+			<h3>変更</h3>
+		</header>
+		<div>
+			<form method="get" action="edit_msg.html">
+				<label for="name">お名前</label>
+				<input type="text" name="name" id="name" value="一ノ瀬　一郎" />
+				<br />
+				<label for="kana">カナ</label>
+				<input type="text" name="kana" id="kana" value="イチノセ　イチロウ" />
+				<br />
+				<label>血液型</label>
+				<input type="radio" id="blood-a"  name="blood" value="a" checked />
+				<label for="blood-a">A</label>
+				<input type="radio" id="blood-o"  name="blood" value="o" />
+				<label for="blood-o">O</label>
+				<input type="radio" id="blood-b"  name="blood" value="b" />
+				<label for="blood-b">B</label>
+				<input type="radio" id="blood-ab" name="blood" value="ab" />
+				<label for="blood-ab">AB</label>
+				<br />
+				<label for="address">住所</label>
+				<input type="text" name="address" id="address" value="愛知県名古屋市" />
+				<br />
+				<input type="submit" name="submit" id="submit" value="変更" />
+				<input type="submit" name="submit" id="submit" value="削除" />
+			</form>
+			<a href="search.html">再検索</a>
+		</div>
+	</body>
+
+</html>
